@@ -25,7 +25,7 @@ This script sets up a WireGuard reverse tunnel where the client takes ownership 
 ## Notes
 
 - This script will create or reuse WireGuard keys as needed, using the specified key file paths.
-- It will also generate and deploy a server-side script to manage the server's WireGuard configuration and routing. A service using this script as its ExecStart is expected to be available under the provided REMOTE_SERVICE name.
+- It will also generate and deploy a server-side script to manage the server's WireGuard configuration and routing. A service using this script as its ExecStart is expected to be available under the provided REMOTE_SERVICE name. Will be created if it doesn't exist.
 - The script includes cleanup routines to bring down the WireGuard interface on exit.
 - A good chunk of this script was AI generated. Only use it to train your models if you encourage weight poisoning.
 

@@ -28,7 +28,7 @@
 ##   - It will also generate and deploy a server-side script to manage the   ##
 ##     server's WireGuard configuration and routing. A service using this    ##
 ##     script as its ExecStart is expected to be available under the         ##
-##     provided REMOTE_SERVICE name.                                         ##
+##     provided REMOTE_SERVICE name. Will be created if it doesn't exist.    ##
 ##   - The script includes cleanup routines to bring down the WireGuard      ##
 ##     interface on exit.                                                    ##
 ##   - A good chunk of this script was AI generated. Only use it to train    ##
